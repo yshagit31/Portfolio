@@ -1,0 +1,283 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color: #091B2A;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.heading{
+    display:flex;       
+}
+.logo{
+    margin-top: 30px;
+    text-align: center;
+    width:300px;
+    height: 100px;
+    font-family:"Lucida Handwriting", cursive;
+    font-size: 30px;
+}
+.sidebar{
+    padding: 10px;
+    flex-grow: 1;
+    font-size: 18px;;
+}
+ul{
+    text-align: right;
+    margin-right: 40px;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 40px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0ef;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav li a:hover::after {
+    width:100%;  
+}
+
+/* ---------front section------------- */
+.frontt{
+    height: auto;
+    padding: 90px 200px;
+    display: flex;
+    gap: 220px;
+    align-items: center;
+}
+#pic1 {
+    width: 420px;
+    height: 440px;
+    border: 6px solid #0ef;
+    border-radius: 50%;
+}
+.bio{
+    flex: 1;
+   font-family: "Lucida Handwriting";  
+}
+.movingtext{
+    color: #0ef;
+    font-size: 22px;
+}
+
+/* ------------About section---------------------- */
+
+section{
+    height:80vh;
+}
+
+.about{
+    height: 70vh;
+    margin:  0;
+    padding: 90px;
+    font-size: 20px;
+    gap: 100px;
+    display: flex; 
+}
+.content{   
+    /* flex-basis: 35%; */
+    width: 60%;
+}
+
+#pic2{
+    border-radius: 55px;
+    border: 2px solid #0ef;
+    width: 300px;
+    height: auto;
+    margin-left: 50px;
+}
+.icon{
+    padding: 20px;
+}
+.icon a{
+    color: #0ef;
+    text-decoration: none;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 7px;
+}
+ .icon a:hover{
+   background:#0ef;
+   color:#091B2A;
+   box-shadow: 0 0 15px #0ef;
+}
+
+/* --------------skills------------- */
+.services{
+    font-size: 20px;
+    line-height: 1.4;   
+}
+.servicetext{
+    color: #0ef;
+}
+.slist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-gap: 50px;
+    margin: 0 50px;
+}
+
+.slist .listitem {
+    position: relative;
+    padding: 40px;
+    background: transparent;
+    border-right: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 48px #0053b8f7;
+    overflow: hidden;
+}
+
+.slist .listitem .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E2E5DE;
+    z-index: 2; /* Place it below the card content */
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s;
+}
+
+.slist .listitem h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.slist .listitem:hover .overlay {
+    opacity: 1;
+}
+
+.slist .listitem:hover {
+    transform: translateY(-10px);
+}
+
+.slist i{
+    color: #0ef;
+    font-size: 60px;
+}
+.layer{
+    /* background: linear-gradient(rgba(0,0,0,0.6),#0ef); */
+    background-color: #BADA55;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* --------------Skills------------------- */
+ 
+
+.skills{
+    display: flex;
+    
+    /* flex-wrap: wrap; */
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 18px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 400px;
+    margin-left: 120px;
+    padding: 75px 90px;
+}
+.progress{
+    border-radius: 10px;
+    height: 6px;
+    background-color: black;   
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress span{
+    height:5px;
+    border-radius: 10px;
+    background-color: #0ef;
+     position: absolute; 
+    /* display inline block krne se color neehe kyun aa raha hai */
+    animation: animate 1.2s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress.html span{
+    width: 90%;
+}
+.progress.css span{
+    width: 70%;
+}
+.progress.js span{
+    width: 65%;
+}
+.progress.cpp span{
+    width: 70%;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.bar .info{
+    animation: showText 0.5s 0.5s linear forwards;
+    opacity:0;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+/* ------percentage------- */
+.progress .percentage::after{
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top:-25px;
+    animation: showText 0.5s 0.5s linear forwards;
+   border: 5px solid black;
+    content: "90%";
+}
+.progress.html .percentage::after{
+    content: "90%";
+}
+.progress.css .percentage::after{
+    content: '70%';
+}
+.progress.js .percentage::after{
+   content: '65%';
+}
+.progress.cpp .percentage::after{
+    content: '70%';
+}
+/* to set properties of percentage content we are using this */
+
