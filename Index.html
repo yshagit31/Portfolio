@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/9cde02ec0b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="heading" id="heading">
+        <div class="logo">Shashank</div>
+        <div class="sidebar" >
+            <nav >
+                <i class="fa-solid fa-bars"  onclick="openmenu()"></i>
+                <ul id="side-bar">       
+                    <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i> </li>
+                    <li><a href="#heading">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#Achieve">Achivements</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- ----------------Main Section--------------- -->
+    <main>
+        <section class="frontt">
+            <div class="bio">
+                <h3>Hello! I am</h3>
+                <h1> Shashank Yadav.</h1>
+                <p>And I'm a <span class="movingtext"> </span> </p>
+                <p> with expertise in design and creation.</p>
+            </div>
+            <div class="pic">
+                <img src="apic4.jpg" alt="mypic" id="pic1"> </img>
+            </div>
+        </section>
+
+        <!--------------------About section------------------------->
+
+        <section class="about" id="about">
+
+            <div class="myimg"><img src="Picture.jpg" id="pic2" alt="apic"></img> </div>
+
+            <div class="content">
+                <h2 class="mainheading">About <span class="subheading">Me</span></h2>
+                <p> I am a skilled Frontend Web Developer, proficient in creating websites. My passion lies in
+                    captivating
+                    website designs and
+                    implementing them through frontend Development. I stay upto date with current designs and implement
+                    them
+                    using my skills in
+                    creating visually appealing and user-friendly websites. I am always keen to learn new technologies
+                    and
+                    enhance my knowledge and
+                    skills. I thrive in high pressure situations and thats what makes me better at doing my job.</p>
+
+                <div class="icon">
+                    <a href="https://www.instagram.com/shashankyadav562/" target="_blank"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com/Shashank255722" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/shashank-yadav-870577259" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/yshagit31" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                   <div class="res">  <a href="Resume Ind.pdf" download="Resume"><button id="Resume">Resume</button></a></div>
+              
+            </div>
+            
+        </section>
+
+        <!-- ------------------services-------------- -->
+
+        <section class="services" id="ser">
+            <h2 class='mainheading'>My <span class="service subheading" >Services</span> </h2>
+            <div class="slist">
+                <div class="listitem">
+                    <i class="fa-brands fa-react"></i>
+                    <h2>Web Design</h2>
+                    <p>I am a proficient web designer who can create visually appealing and user-friendly website. I
+                        stay upto date with current designs. I can create websites as and when required.
+                    </p>
+                    <div class="overlay">
+                        <!-- <h3>Hover Text</h3> -->
+                    </div>
+                </div>
+                <div class="listitem">
+                    <i class='bx bx-code-alt'></i>
+                    <h2>C++ Programmer</h2>
+                    <p> I have a passion for problem solving.<br> I like working with complex problems and situations.
+                        Logic building is what I like. Its fun working with programming.
+                    </p>
+                    <div class="overlay">
+                        <!-- <h3>Hover Text</h3> -->
+                    </div>
+                </div>
+                <div class="listitem">
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Leader</h2>
+                    <p>I am a very collaborative person.<br> I have all the abilities needed to lead a group. I can work
+                        with a
+                        team while leading them and get the best results.<br> I can converse well and collaborate with
+                        everybody.
+                    </p>
+                    <div class="overlay">
+                        <!-- <h3>Hover Text</h3> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------skills------------------- -->
+
+        <section class="skills" id="skill">
+            <div class="container">
+                <h2 class="heading1 mainheading">Technical <span class="subheading"> Skills </span> </h2>
+                <div class="bar">
+                    <i class='bx bxl-html5' style="color:#c95d2e;"></i>
+                    <span class="info">HTML</span>
+                    <div class="progress html">
+                        <span class="percentage"></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class='bx bxl-css3' style="color:#147bbc;"></i>
+                    <span class="info">CSS</span>
+                    <div class="progress css">
+                        <span class="percentage"></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class='bx bxl-javascript' style="color:#b0bc1e;"></i>
+                    <span class="info">Javascript</span>
+
+                    <div class="progress js">
+                        <span class="percentage"></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <i class='bx bxl-c-plus-plus' style="color:purple;"></i>
+                    <span class="info">C++</span>
+
+                    <div class="progress cpp">
+                        <span class="percentage"></span>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <h2 class="heading1 mainheading">Professional <span class="subheading">  Skills</span> </h2>
+                <div class="rbar">
+                    <div class="radialbars">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="cir">
+                                    <svg x="0" y="0" viewBox="0 0 200 200" class="cret">
+                                        <circle class="path progress1" cx="100" cy="100" r="90"  fill="#091B2A"></circle>
+                                        <!-- <text x="50%" y="55%" alignment-baseline="middle" text-anchor="middle" fill="#fff" font-size="20px">80%</text> -->
+                                        <foreignObject x="40%" y="50%" width="100%" height="100%" text-anchor="middle" alignment-baseline="middle">
+                                            <div xmlns="http://www.w3.org/1999/xhtml" style="color: #fff; font-size: 20px;" class="percent1">80%</div>
+                                        </foreignObject>
+                                    </svg>
+                                    <!-- <div class="percent1">80%</div> -->
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="desc">Creativity</div>
+                    </div>
+                    <div class="radialbars">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="cir">
+                                    <svg x="0" y="0" viewBox="0 0 200 200">
+                                        <circle class="path progress2" cx="100" cy="100" r="90"></circle>
+                                        <foreignObject x="40%" y="50%" width="100%" height="100%" text-anchor="middle" alignment-baseline="middle">
+                                            <div xmlns="http://www.w3.org/1999/xhtml" style="color: #fff; font-size: 20px;"  class="percent2">75%</div>
+                                        </foreignObject>
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- <div class="percent2">75%</div> -->
+                        </div>
+                        <div class="desc">Communication</div>
+                    </div>
+                    <div class="radialbars">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="cir">
+                                    <svg x="0" y="0" viewBox="0 0 200 200">
+                                        <circle class="path progress3" cx="100" cy="100" r="90"></circle>
+                                        <foreignObject x="40%" y="50%" width="100%" height="100%" text-anchor="middle" alignment-baseline="middle">
+                                            <div xmlns="http://www.w3.org/1999/xhtml" style="color: #fff; font-size: 20px;" class="percent3">70%</div>
+                                        </foreignObject>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">Problem Solving</div>
+                    </div>
+                    <div class="radialbars">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="cir">
+                                    <svg x="0" y="0" viewBox="0 0 200 200">
+                                        <circle class="path progress4" cx="100" cy="100" r="90"></circle>
+                                        <foreignObject x="40%" y="50%" width="100%" height="100%" text-anchor="middle" alignment-baseline="middle">
+                                            <div xmlns="http://www.w3.org/1999/xhtml" style="color: #fff; font-size: 20px;" class="percent4">85%</div>
+                                        </foreignObject>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="desc">Teamwork</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- -------------------projects------------- -->
+
+        <section class="projects" id="project">
+            <h2 class="heading1 mainheading">My <span class="subheading" style="color: #0ef;">Work</span></h2>
+            <div class="worklist">
+                <div class="work">
+                    <img src="coaching3.webp" alt="coac"  />
+                    <div class="overlay">
+                        <h3>Coaching Management</h3>
+                        <p>This is a coaching institute management software developed using c++. It helps manage and see <br>the overall functioning of a 
+                            coaching institute. 
+                        </p>
+                        <a href=""><i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="face-re2.jpg" alt="fac" />
+                    <div class="overlay">
+                        <h3>Face recognistion system</h3>
+                        <p>This is a Face recognisition software developed<br> using openCV, python. It can be used in various<br>  security systems for face recognisition. 
+                        </p>
+                        <a href=""><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Object-detection.jpg" alt="obj" />
+                    <div class="overlay">
+                        <h3>Object Detection System</h3>
+                        <p>This is an object detection software developed<br> using embedded C. I tells distance of object<br> and alerts
+                            if object comes too close. 
+                        </p> 
+                        <a href=""><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --------------Achievements---------- -->
+
+        <section class="Achievements" id="Achieve">
+            <h2 class="heading1">Achievements and  <span style="color: #0ef;">Certifications</span></h2>
+            <div class="worklist">
+                <div class="work">
+                    <img src="web3.jpg" alt="dev"  />
+                    <div class="overlay achi">
+                        <h3>Web Development Internship</h3>
+                        <p>Did a three weeks Internship with Take It Smart<br> Pvt Ltd. Got to learn basics of web developement.
+                        </p>
+                        <a href="Web_certi.pdf" target="_blank"  >Certificate</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="design4.jpg" alt="fac" />
+                    <div class="overlay achi">
+                        <h3>Design Thinking Course</h3>
+                        <p>Completed Design Thinking course from Infosys Springboard. Had an opportunity
+                            to learn the idea <br>of design thinking.
+                        </p >
+                        <a href="Infosys_Certificate.pdf"  target="_blank" >Certificate</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="quiz2.webp" alt="obj" />
+                    <div class="overlay achi">
+                        <h3>Runner Up in Quiz</h3>
+                        <p>Participated in an inter department quiz organised by the Chemistry Department of my college and stood second.
+                        </p> 
+                        <a href="Quiz_certi.pdf" target="_blank" >Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- -------------------Contacts------------------ -->
+
+        <section class="Contacts" id="contact">
+
+            <h3 class="con">Contact <span style="color: #0ef;">Me</span></h3>
+            <p>Discuss any project or just want to say Hi, my inbox is open for all.</p>
+            <p ><a href="mailto:yshashank024@gmail.com"><i class='bx bxl-gmail'></i>: yshashank024@gmail.com</a></p>
+            <p><a href="tel:+919161358360"><i class='bx bxs-phone'></i> : +919161358360</a></p>
+            <p> <a href="#" id="locationIcon"><i class='bx bx-location-plus'></i> : Bengaluru, India</a></p><br>
+        
+            <div class="icon">
+
+                <a href="https://www.instagram.com/shashankyadav562/" target="_blank"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com/Shashank255722" target="_blank"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/shashank-yadav-870577259" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/yshagit31" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="#" class="scroll" ><i class='bx bxs-up-arrow-circle'></i></a>
+        </section>
+    </main>
+
+    <!-- ------------------footer------------- -->
+    <footer>
+        © Shashank
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
