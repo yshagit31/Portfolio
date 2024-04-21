@@ -411,7 +411,7 @@ box-shadow: 0 0 15px #0ef;
     position: relative;
     border-right: 10px;
     border-radius: 20px;
-    box-shadow: 1px 1px 20px #012290f7, 1px 1px 48px #0053b8f7;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 20px #0053b8f7;
     overflow: hidden;
 }
 .work .overlay {
