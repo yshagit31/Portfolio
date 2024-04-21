@@ -71,7 +71,7 @@ display: none;}
 }
 .bio {
     flex: 1; 
-    font-family: "Lucida Handwriting";
+    font-family: "Lucida Handwriting", cursive;
 }
 .movingtext {
     color: #0ef;
