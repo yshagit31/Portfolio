@@ -70,7 +70,7 @@ display: none;}
     border-radius: 50%;
 }
 .bio {
-    flex: 1;
+    flex: 1; 
     font-family: "Lucida Handwriting";
 }
 .movingtext {
