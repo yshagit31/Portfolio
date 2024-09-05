@@ -1,6 +1,6 @@
 
 var typed = new Typed(".movingtext", {
-  strings: [ "Frontend Web Developer."],
+  strings: [ "Frontend Web Developer"],
   typeSpeed: 50,
   backSpeed: 50,
   backDelay: 100,
@@ -16,7 +16,9 @@ var typed = new Typed(".movingtext", {
 
 var number=document.getElementsByClassName("percent1");
 var numbe=document.getElementsByClassName("percent2");
-var numb=document.getElementsByClassName("radialbars");
+var numb=document.getElementsByClassName("percent3");
+var num=document.getElementsByClassName("percent4");
+
 var i=0;
 let a=setInterval(function()
 {
@@ -33,7 +35,7 @@ let a=setInterval(function()
 var i2=0;
  b=setInterval(function()
 {
-  if(i2==75){
+  if(i2==85){
     clearInterval(b);
   }
   else
@@ -47,12 +49,12 @@ var i2=0;
 var i3=0;
  c=setInterval(function()
 {
-  if(i3>70){
+  if(i3>80){
     clearInterval(c);
   }
   else
   {
-    numb[2].childNodes[5].innerHTML=i3+"%";
+    numb[0].innerHTML=i3 +"%";
     i3++;
   }
 },8);
@@ -60,15 +62,29 @@ var i3=0;
 var i4=0;
  d=setInterval(function()
 {
-  if(i4>85){
+  if(i4>90){
     clearInterval();
   }
   else
   {
-    numb[3].childNodes[5].innerHTML=i4+"%";
+    num[0].innerHTML=i4 +"%";
     i4++;
   }
 },6);
+
+// --------------nav bar-----------
+
+var menu=document.getElementById("side-bar");
+function openmenu()
+{
+  menu.style.right="0px";
+}
+function closemenu()
+{
+  menu.style.right="-200px";
+}
+
+
 
 
 
