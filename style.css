@@ -246,16 +246,16 @@ box-shadow: 0 0 15px #0ef;
     transform-origin: left;
 }
 .progress.html span {
-    width: 85%;
+    width: 90%;
 }
 .progress.css span {
     width: 70%;
 }
 .progress.js span {
-    width: 60%;
+    width: 65%;
 }
 .progress.cpp span {
-    width: 85%;
+    width: 70%;
 }
 @keyframes animate {
     100% {
@@ -284,16 +284,16 @@ box-shadow: 0 0 15px #0ef;
     content: "";
 }
 .progress.html .percentage::after {
-    content: "85%";
+    content: "90%";
 }
 .progress.css .percentage::after {
     content: '70%';
 }
 .progress.js .percentage::after {
-    content: '60%';
+    content: '65%';
 }
 .progress.cpp .percentage::after {
-    content: '85%';
+    content: '70%';
 }    /* to set properties of percentage content we are using this */
 
 /* -------------radialbars------------ */
@@ -374,18 +374,18 @@ box-shadow: 0 0 15px #0ef;
 
 @keyframes anim2 {
     100% {
-        stroke-dashoffset: 110;
+        stroke-dashoffset: 180;
     }
 }
 
 @keyframes anim3 {
     100% {
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 200;
     }
 }
 @keyframes anim4 {
     100% {
-        stroke-dashoffset: 90;
+        stroke-dashoffset: 137;
     }
 }
 
